@@ -25,7 +25,7 @@ $handler->setFormatter( new JsonFormatter() );
 $log->pushHandler($handler);
 
 // add records to the log
-$log->warning('hello',$_ENV);
-$log->error('you',$_SERVER);
+$log->warning('hello ' . time(),$_ENV);
+$log->error('you ' . time(),$_SERVER);
 
 echo "\n\nOK!";

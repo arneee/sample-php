@@ -2,6 +2,8 @@
 require __DIR__ . '/vendor/autoload.php';
 
 use Cowsayphp\Farm;
+use Monolog\Handler\StreamHandler;
+use Monolog\Logger;
 
 header('Content-Type: text/plain');
 
